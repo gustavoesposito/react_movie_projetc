@@ -2,17 +2,15 @@
 import './App.css'
 
 function App() {
- 
-  return (
+ return (
     <div className="App">
       <nav id="navbar">
         <h2>
-          <Link to="/">EspoFLix</Link>
+          <Link to="/">EspoFlix</Link>
         </h2>
         <Link to="/movie/1">Movie</Link>
         <Link to="/search">Search</Link>
-
-        </nav>
+       </nav>
       <h2>EspoFlix</h2>
       <Outlet/>
     </div>
