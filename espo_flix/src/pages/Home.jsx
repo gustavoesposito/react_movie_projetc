@@ -7,6 +7,9 @@
  const apiKey = import.meta.env.VITE_API_KEY;
 
 const Home = () => {
+
+    console.log(moviesURL, apiKey)
+
     return(
         <div>Home</div>
     )
