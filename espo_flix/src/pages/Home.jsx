@@ -15,7 +15,11 @@ const getTopRatedMovies =async (url) => {
 
  console.log(data)
 };
- 
+
+useEffect(()=> {
+
+}, [])
+
     return <div>Home</div>;
     
 };
