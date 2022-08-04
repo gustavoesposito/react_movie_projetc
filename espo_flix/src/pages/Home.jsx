@@ -10,13 +10,14 @@ const Home = () => {
 const [topMovies, setTopMovies] = useState([])
 
 const getTopRatedMovies =async (url) => {
- const resp = await fetch(url)
+ const res = await fetch(url)
  const data =await resp.json()
-}
+
+ console.log(data)
+};
  
-    return(
-        <div>Home</div>
-    )
-}
+    return <div>Home</div>;
+    
+};
 
 export default Home;
