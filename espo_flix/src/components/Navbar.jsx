@@ -5,11 +5,13 @@ const Navbar = () => {
     return (
         <nav id="navbar">
         <h2>
-            <Link to="/">EspoFlix</Link>
+            <Link to="/"><BiCameraMovie/>EspoFlix</Link>
         </h2>
          <form >
              <input  type="text" placeholder="Busque um filme" />
-             <button type="submit"></button>
+             <button type="submit">
+                <BiSearchAlt2/>
+             </button>
          </form>
         
         </nav>
