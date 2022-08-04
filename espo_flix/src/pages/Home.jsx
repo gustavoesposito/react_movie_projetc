@@ -1,4 +1,5 @@
  import { useState, useEffect } from "react";
+import MovieCard from "../components/MovieCard";
 
   
   //url da api
@@ -27,7 +28,7 @@ const Home = () => {
             <h2 className="title">Top Movies:</h2>
             <div className="movies-container">
                 {topMovies === 0 &&  <p>Carrgando...</p>}
-            {topMovies.length > 0 && topMovies.map((movie) => <p>{movie.title}</p>)}
+            {topMovies.length > 0 && topMovies.map((movie) => <MovieCard movie={movie} />)}
             </div>
         </div>
      )
