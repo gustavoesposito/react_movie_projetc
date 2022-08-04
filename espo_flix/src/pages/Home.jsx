@@ -7,9 +7,13 @@
  const apiKey = import.meta.env.VITE_API_KEY;
 
 const Home = () => {
+const [topMovies, setTopMovies] = useState([])
 
-    console.log(moviesURL, apiKey)
-
+const getTopRatedMovies =async (url) => {
+ const resp = await fetch(url)
+ const data =await resp.json()
+}
+ 
     return(
         <div>Home</div>
     )
