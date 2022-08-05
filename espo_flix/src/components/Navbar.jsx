@@ -10,8 +10,15 @@ const navigate = useNavigate();
 
 const handleSubmit =(e) => {
 e.preventDefault();
-console.log(search);
-}
+
+//aqui começa o redirecionamento do search
+//validação
+if(!search) return
+
+navigate(`/search?q=${search}`);
+setSearch("");
+
+ };
 
     return (
         <nav id="navbar">
