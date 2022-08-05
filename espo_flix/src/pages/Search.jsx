@@ -8,12 +8,18 @@
  //minha apiKey
  const apiKey = import.meta.env.VITE_API_KEY
 
- import
+ import "./MoviesGrid.css";
 
 const Search = () => {
     return(
-        <div>Search</div>
-    )
+    <div className="container">
+            <h2 className="title">Resultados para</h2>
+            <div className="movies-container">
+                {topMovies === 0 &&  <p>Carrgando...</p>}
+            {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+            </div>
+        </div>
+    );
 }
 
 export default Search;
