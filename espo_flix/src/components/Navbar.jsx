@@ -17,7 +17,7 @@ if(!search) return
 
 navigate(`/search?q=${search}`);
 setSearch("");
-
+//depois disso vou lá para o components de search para conectar a api ao pesquisar
  };
 
     return (
