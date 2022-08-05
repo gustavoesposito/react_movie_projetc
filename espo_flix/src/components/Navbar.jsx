@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import {BiCameraMovie, BiSearchAlt2} from "react-icons/bi"
 
 
