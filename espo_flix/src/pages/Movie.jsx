@@ -19,8 +19,24 @@ import  MovieCard from  "../components/MovieCard";
 const Movie = () => {
     const {id} = useParams();
     const [movie, setMovie] = useState(null)
+
+    const getMovie = async (url) => {
+        const res = await fetch(url);
+        const data = await res.json();
+        setMovies(data);
+    }
+
+    useEffect(() => {
+        const movieUrl = `$(moviesURL)${id}?${apiKey}`
+        getMovie(movieUrl)
+    }, [])
+
     return(
-        <div>Movie</div>
+        <div> 
+            {movie &&(
+                <>{movie.title}</>
+            )}
+        </div>
     )
 }
 
