@@ -23,5 +23,9 @@ margin: 2rem 0 1rem;
 .movies-container div{
     width: 30%;
     color: #FFF;
-    margin-bottom: ;
+    margin-bottom:2.5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: #111;
 }
