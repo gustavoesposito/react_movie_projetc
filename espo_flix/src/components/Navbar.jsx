@@ -9,7 +9,8 @@ const [search, setSearch] = useState("")
 const navigate = useNavigate();
 
 const handleSubmit =(e) => {
-  console.log(e)
+e.preventDefault();
+console.log(search);
 }
 
     return (
@@ -17,7 +18,7 @@ const handleSubmit =(e) => {
         <h2>
             <Link to="/"><BiCameraMovie/>EspoFlix</Link>
         </h2>
-         <form >
+         <form onSubmit={handleSubmit} >
              <input  type="text" placeholder="Busque um filme"
              onChange={(e) => setSearch(e.target.value)}
              value={search}
