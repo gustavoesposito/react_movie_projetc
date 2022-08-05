@@ -29,3 +29,17 @@ margin: 2rem 0 1rem;
     justify-content:space-between;
     background-color: #111;
 }
+
+.movies-container div img{
+    max-width: 100%;
+}
+
+.movies-container div img,
+.movies-container div h2,
+.movies-container div p{
+    margin-bottom: 1rem;
+ }
+
+ .movies-container div sv{
+    color: #f7d354;
+ }
